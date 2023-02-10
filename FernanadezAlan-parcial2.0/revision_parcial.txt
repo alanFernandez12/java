@@ -1,0 +1,52 @@
+Estimado Alan,
+
+
+Te compartimos la corrección del parcial:
+
+
+1) + agregarEmpresa(String nombre) : boolean 
+
+Regular. No se tienen que crear objetos con valores incorrectos o incompletos, en este caso crear la Empresa sin su id.
+
+
+2) + traerEmpresa(String nombre): Empresa
+
+Mal. Para bucles que pueden terminar antes de recorrer todas la lista se usa While, en este caso había que usar un doble corte de control, con la longitud de la lista y la búsqueda en sí del objeto. Como String en es un objeto, se compara con equals, no con ==, eso se usa solo para datos primitivos.
+
+
+3) + agregarDispositivo(String nombre, String codigo, Empresa empresa) : boolean 
+
+Mal. Misma observación del punto 1. Por otro lado falta la validación del campo código, debería estar en el set del atributo y se tendría que usar en el constructor.
+
+
+4) + traerDispositivo(String codigo): Dispositivo
+
+Mal. Mismas observaciones del punto 2.
+
+
+5) + agregarMetrica(int valor, LocalDate fecha, LocalTime hora) : boolean 
+
+Bien.
+
+
+6) + traerMetrica(LocalDate fecha, LocalTime hora) : Metrica
+
+Mal. Misma observación del punto 2.
+
+
+7) + traerMetricas(LocalDate desde, LocalDate hasta): List<Metrica>
+
+No resuelto.
+
+
+8) + traerMetricas(Dispositivo dispositivo, LocalDate desde, LocalDate hasta, int menorAValor): List<Metrica>
+
+No resuelto.
+
+
+Nota: 2 (dos)
+
+
+Cátedra de OO,
+
+Saludos
